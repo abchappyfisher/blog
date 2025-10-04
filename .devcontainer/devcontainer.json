@@ -28,12 +28,12 @@
     "ghcr.io/devcontainers/features/bun:1": {
       "version": "latest"
     },
-    "ghcr.io/devcontainers-contrib/features/wrangler:2": {},
+    "ghcr.io/devcontainers/features/node": {},
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
 
-  "postCreateCommand": "bun add -g sass stylelint stylelint-config-standard && bun install",
+  "postCreateCommand": "npm install -g wrangler && bun install",
 
   "forwardPorts": [3000, 8787, 24678],
 
